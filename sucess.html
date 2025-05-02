@@ -1,0 +1,35 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task-Management</title>
+        <link rel="stylesheet" href="sucess.css">
+    </head>
+      <body>
+      
+      <div class="container">
+        <h2>Task Management Challenge</h2>
+        <form id="createForm">
+            <input type="text" id="title" placeholder="Task Title" required><br>
+            <textarea id="description" placeholder="Task Description" required></textarea>
+            <input type="text" id="assignedTo" placeholder="Assigned To" required><br>
+            <button type="submit" id="submit">Create Task</button>
+        </form>
+    
+        
+        <div class="board">
+          <div class="column" id="todo">
+            <h2 style="color: #fdc6fd; text-shadow: 2px 2px 2px rgb(150, 90, 150);">To Do</h2>
+          </div>
+          <div class="column" id="inprogress">
+            <h2 style="color: #f7c2f7; text-shadow: 2px 2px 2px rgb(150, 90, 150);">In Progress</h2>
+          </div>
+          <div class="column" id="done">
+            <h2 style="color: #fdc3fd; text-shadow: 2px 2px 2px rgb(150, 90, 150);">Done</h2>
+          </div>
+        </div>
+      </div>
+    
+        <script type="module" src="sucess.js"></script>
+    </body>
+    </html>

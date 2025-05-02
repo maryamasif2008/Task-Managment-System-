@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Management</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login  -->
+           <div class="form-box register">
+               <form action="">
+                   <h1>Login</h1>
+                   <div class="input-box">
+                       <input type="email" placeholder="Email" required id="email">
+                       <i class='bx bxs-envelope'></i>
+                   </div>
+                   <div class="input-box">
+                       <input type="password" placeholder="password " required id="password">
+                       <i class='bx bxs-lock-alt'></i>
+                   </div>
+                   <div class="forget-link">
+                       <a href="#">Forget password?</a>
+                   </div>      
+                   <button type="submit" class="btn" id="submit">Login </button>
+               </form>
+
+               <!-- Custom Alert -->
+              <div id="custom-alert" class="alert hidden">
+                 <span id="alert-message"></span><br>
+                 <button onclick="closeAlert()">OK</button>
+              </div>
+           </div>
+    </div>
+
+    <script type="module" src="login.js"></script>
+</body>
+</html>
